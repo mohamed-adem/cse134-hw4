@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Mohamed Adem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">Mohamed Adem</div>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section>
+        <h2>About</h2>
+        <p>I’m Mohamed Adem, a 3rd-year Computer Science student at UC San Diego.</p>  
+        <picture>
+          <source
+            type="image/avif"
+            srcset="images/hero-600.avif 600w,
+                    images/hero-900.avif 900w,
+                    images/hero-1300.avif 1300w"
+            sizes="(max-width: 600px) 90vw,
+                   (max-width: 900px) 80vw,
+                   800px">
+          <source
+            type="image/webp"
+            srcset="images/hero-600.webp 600w,
+                    images/hero-900.webp 900w,
+                    images/hero-1300.webp 1300w"
+            sizes="(max-width: 600px) 90vw,
+                   (max-width: 900px) 80vw,
+                   800px">
+          <img
+            src="images/hero-900.jpg"
+            width="900" height="600"
+            alt="UC San Diego Geisel Library"
+            loading="lazy" decoding="async">
+        </picture>
+      </section>
+  
+
+  <footer class="site-footer">
+    <p><strong>©</strong> 2025 Mohamed Adem</p>
+  </footer>
+</body>
+</html>

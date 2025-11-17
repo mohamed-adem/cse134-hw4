@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Mohamed Adem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">Mohamed Adem</div>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section class="hero" aria-labelledby="welcome">
+        <div>
+          <h1 id="welcome">Welcome</h1>
+          <p>I'm <strong>Mohamed Adem</strong>, a 3rd-year Computer Science student at UCSD.</p>
+
+          <picture>
+            <source
+              type="image/avif"
+              srcset="images/hero-600.avif 600w, images/hero-900.avif 900w, images/hero-1300.avif 1300w"
+              sizes="(max-width: 600px) 90vw, (max-width: 900px) 80vw, 800px">
+            <source
+              type="image/webp"
+              srcset="images/hero-600.webp 600w, images/hero-900.webp 900w, images/hero-1300.webp 1300w"
+              sizes="(max-width: 600px) 90vw, (max-width: 900px) 80vw, 800px">
+            <img
+              src="images/hero-900.jpg"
+              width="900" height="600"
+              alt="UCSD's Geisel Library">
+          </picture>
+          
+
+          <p style="margin-top:1rem">
+            <a class="cta" href="projects.html">See my projects</a>
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects-preview">
+        <h2 id="projects-preview">Projects Preview</h2>
+        <div class="projects-list">
+          <article class="card" aria-labelledby="p1">
+            <h3 id="p1">Personal Portfolio</h3>
+            <p>A personal portfolio that highlights who I am, what I’m studying, and some of the projects I’ve worked on.</p>
+          </article>
+          <article class="card" aria-labelledby="p2">
+            <h3 id="p2">wip</h3>
+            <p>future project</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Gallery">
+        <img src="images/portfolio-image-1300.png" alt="Portfolio Website">
+        <div class="media-frame">
+          <img src="images/wip.jpg" alt="Future project">
+        </div>
+      </section>
+
+      <section>
+        <layout-block>
+          <p>Thanks for visiting my website!</p>
+        </layout-block>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p><strong>©</strong> <span id="year">2025</span> <span>Mohamed Adem</span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Mohamed Adem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">Mohamed Adem</div>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section>
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, fill out the form below.</p>
+
+        <form aria-describedby="form-note">
+          <fieldset>
+            <legend>Get in touch</legend>
+
+            <p>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </p>
+
+            <p>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </p>
+
+            <p>
+              <label for="msg">Message</label><br>
+              <textarea id="msg" name="msg" rows="4" cols="40" required></textarea>
+            </p>
+
+            <p><button type="button" aria-disabled="true">Send</button></p>
+          </fieldset>
+        </form>
+
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p><strong>©</strong> 2025 Mohamed Adem</p>
+  </footer>
+</body>
+</html>
