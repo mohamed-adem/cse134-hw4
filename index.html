@@ -8,16 +8,42 @@
 </head>
 
 <body>
+  <!-- Shown only if JS is disabled -->
+  <noscript>
+    <p class="noscript-note">
+      Theme switching and animated page transitions require JavaScript.
+      You’re seeing the default light theme without transitions.
+    </p>
+  </noscript>
+
   <header class="site-header">
     <div class="brand">Mohamed Adem</div>
+
     <nav class="nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About </a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="index.html" aria-current="page" data-vt-link>Home</a>
+        </li>
+        <li>
+          <a href="projects.html" data-vt-link>Projects</a>
+        </li>
+        <li>
+          <a href="about.html" data-vt-link>About</a>
+        </li>
+        <li>
+          <a href="contact.html" data-vt-link>Contact</a>
+        </li>
       </ul>
     </nav>
+
+    <button
+      type="button"
+      class="theme-toggle"
+      data-theme-toggle
+    >
+      Dark
+      <span class="sr-only">Toggle dark mode</span>
+    </button>
   </header>
 
   <div class="wrapper">
@@ -30,21 +56,28 @@
           <picture>
             <source
               type="image/avif"
-              srcset="images/hero-600.avif 600w, images/hero-900.avif 900w, images/hero-1300.avif 1300w"
-              sizes="(max-width: 600px) 90vw, (max-width: 900px) 80vw, 800px">
+              srcset="images/hero-600.avif 600w,
+                      images/hero-900.avif 900w,
+                      images/hero-1300.avif 1300w"
+              sizes="(max-width: 600px) 90vw,
+                     (max-width: 900px) 80vw,
+                     800px">
             <source
               type="image/webp"
-              srcset="images/hero-600.webp 600w, images/hero-900.webp 900w, images/hero-1300.webp 1300w"
-              sizes="(max-width: 600px) 90vw, (max-width: 900px) 80vw, 800px">
+              srcset="images/hero-600.webp 600w,
+                      images/hero-900.webp 900w,
+                      images/hero-1300.webp 1300w"
+              sizes="(max-width: 600px) 90vw,
+                     (max-width: 900px) 80vw,
+                     800px">
             <img
               src="images/hero-900.jpg"
               width="900" height="600"
               alt="UCSD's Geisel Library">
           </picture>
-          
 
           <p style="margin-top:1rem">
-            <a class="cta" href="projects.html">See my projects</a>
+            <a class="cta" href="projects.html" data-vt-link>See my projects</a>
           </p>
         </div>
       </section>
@@ -57,8 +90,8 @@
             <p>A personal portfolio that highlights who I am, what I’m studying, and some of the projects I’ve worked on.</p>
           </article>
           <article class="card" aria-labelledby="p2">
-            <h3 id="p2">wip</h3>
-            <p>future project</p>
+            <h3 id="p2">Work in Progress</h3>
+            <p>A placeholder for a future project.</p>
           </article>
         </div>
       </section>
@@ -75,12 +108,14 @@
           <p>Thanks for visiting my website!</p>
         </layout-block>
       </section>
-
     </main>
   </div>
 
   <footer class="site-footer">
     <p><strong>©</strong> <span id="year">2025</span> <span>Mohamed Adem</span></p>
   </footer>
+
+  <!-- Theme toggle + View Transition API -->
+  <script src="site.js" defer></script>
 </body>
 </html>

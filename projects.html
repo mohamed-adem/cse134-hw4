@@ -8,16 +8,33 @@
 </head>
 
 <body>
+  <noscript>
+    <p class="noscript-note">
+      Theme switching and animated page transitions require JavaScript.
+      You’re seeing the default light theme without transitions.
+    </p>
+  </noscript>
+
   <header class="site-header">
     <div class="brand">Mohamed Adem</div>
+
     <nav class="nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-vt-link>Home</a></li>
+        <li><a href="projects.html" aria-current="page" data-vt-link>Projects</a></li>
+        <li><a href="about.html" data-vt-link>About</a></li>
+        <li><a href="contact.html" data-vt-link>Contact</a></li>
       </ul>
     </nav>
+
+    <button
+      type="button"
+      class="theme-toggle"
+      data-theme-toggle
+    >
+      Dark
+      <span class="sr-only">Toggle dark mode</span>
+    </button>
   </header>
 
   <div class="wrapper">
@@ -31,7 +48,6 @@
             <h3>Personal Portfolio</h3>
             <p>A personal portfolio that highlights who I am, what I’m studying, and some of the projects I’ve worked on.</p>
           </article>
-
         </div>
       </section>
     </main>
@@ -40,5 +56,8 @@
   <footer class="site-footer">
     <p><strong>©</strong> 2025 Mohamed Adem</p>
   </footer>
+
+  <!-- Theme toggle + View Transition API -->
+  <script src="site.js" defer></script>
 </body>
 </html>
